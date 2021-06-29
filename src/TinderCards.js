@@ -6,7 +6,7 @@ export default function TinderCards() {
     const [people, setPeople] = useState([]); 
 
     useEffect(() => {
-        axios.get('http://localhost:9002/tinder/card')
+        axios.get('https://hardik-tinder-backend-api.herokuapp.com/tinder/card')
             .then(res => {
                 setPeople(res.data)
             })
